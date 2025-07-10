@@ -1,0 +1,258 @@
+/* Blog-specific styles that complement index.css */
+
+/* Active nav link styling */
+nav a.active {
+    color: #ffffff;
+    border-bottom: 1px solid #333;
+}
+
+/* Blog header section */
+.blog-header {
+    margin-bottom: 4rem;
+    text-align: left;
+}
+
+.blog-title {
+    color: #F6F6F6;
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    letter-spacing: -0.01em;
+}
+
+.blog-subtitle {
+    color: #e3e1e1;
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 555px;
+}
+
+/* Blog content container */
+.blog-content {
+    max-width: 555px;
+}
+
+/* Individual blog post styling */
+.blog-post {
+    margin-bottom: 3.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+.blog-post:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+/* Featured post styling */
+.blog-post.featured {
+    margin-bottom: 4rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #333;
+}
+
+.blog-post.featured .post-title {
+    font-size: 1.4rem;
+}
+
+.blog-post.featured .post-excerpt {
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+/* Post metadata */
+.post-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+    color: #999;
+    flex-wrap: wrap;
+}
+
+.post-date {
+    color: #bbb;
+}
+
+.post-category {
+    color: #aaa;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+
+.read-time {
+    color: #888;
+}
+
+/* Post titles */
+.post-title {
+    margin-bottom: 1rem;
+}
+
+.post-title a {
+    color: #F6F6F6;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.3;
+    transition: color 0.3s ease;
+}
+
+.post-title a:hover {
+    color: #ffffff;
+}
+
+/* Post excerpts */
+.post-excerpt {
+    color: #e3e1e1;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+/* Tags */
+.post-tags {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background-color: #1a1a1a;
+    color: #ccc;
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: 1px solid #333;
+    transition: all 0.3s ease;
+}
+
+.tag:hover {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Archive section */
+.blog-archive {
+    margin-top: 5rem;
+    padding-top: 2.5rem;
+    border-top: 1px solid #333;
+    max-width: 555px;
+}
+
+.blog-archive h3 {
+    color: #F6F6F6;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.archive-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.archive-links a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+    padding: 0.5rem 0;
+}
+
+.archive-links a:hover {
+    color: #fff;
+}
+
+/* Responsive design for blog */
+@media (max-width: 768px) {
+    .blog-title {
+        font-size: 1.5rem;
+    }
+    
+    .blog-subtitle {
+        font-size: 0.95rem;
+    }
+    
+    .post-meta {
+        gap: 0.75rem;
+        font-size: 0.8rem;
+    }
+    
+    .post-title a {
+        font-size: 1.1rem;
+    }
+    
+    .post-excerpt {
+        font-size: 0.9rem;
+    }
+    
+    .blog-post.featured .post-title {
+        font-size: 1.2rem;
+    }
+    
+    .blog-post.featured .post-excerpt {
+        font-size: 0.95rem;
+    }
+    
+    .post-tags {
+        gap: 0.5rem;
+    }
+    
+    .tag {
+        font-size: 0.75rem;
+        padding: 0.2rem 0.6rem;
+    }
+    
+    .blog-archive {
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .post-meta {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+    
+    .blog-title {
+        font-size: 1.3rem;
+    }
+    
+    .post-title a {
+        font-size: 1rem;
+    }
+    
+    .blog-post {
+        margin-bottom: 2.5rem;
+        padding-bottom: 2rem;
+    }
+    
+    .blog-post.featured {
+        margin-bottom: 3rem;
+    }
+}
+
+/* Subtle animations */
+.blog-post {
+    transition: transform 0.2s ease;
+}
+
+.blog-post:hover {
+    transform: translateY(-1px);
+}
+
+/* Selection styling consistent with main site */
+.blog-content ::selection {
+    background-color: #333;
+    color: #fff;
+}
+
+.blog-content ::-moz-selection {
+    background-color: #333;
+    color: #fff;
+} 

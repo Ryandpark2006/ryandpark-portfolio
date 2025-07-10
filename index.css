@@ -1,0 +1,132 @@
+* {
+    background-color: #000;
+    color: #FFFFFF;
+    box-sizing: border-box;
+}
+
+.header {
+    font-family: "work-sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding-right: 100px;
+}
+
+body {
+    padding-top: 80px;
+}
+  
+.content-block {    
+    max-width: 555px;
+    line-height: 1.2;
+}
+
+p {
+   color: #e3e1e1
+}
+
+h2 {
+    color: #F6F6F6;
+    font-weight: 400;
+    font-size: 1.65rem;
+    /* color: #F6F6F6;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    letter-spacing: -0.01em; */
+}
+
+h3 {
+    color: #F6F6F6;
+    font-weight: 400;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    border-bottom: 1px solid #333;
+    z-index: 1000;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #000;
+    color: #FFFFFF;
+}
+
+nav a {
+    color: #cccccc;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+/* Logo link styling */
+.logo-link {
+    text-decoration: none;
+    color: inherit;
+    transition: opacity 0.3s ease;
+}
+
+.logo-link:hover {
+    opacity: 0.8;
+}
+
+.resume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Tablet styles - 768px and up */
+/* @media (min-width: 768px) {
+    .container {
+        padding: 2rem;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    .logo {
+        font-size: 2.5rem;
+    }
+} */
+
+/* Desktop styles - 1024px and up */
+/* @media (min-width: 1024px) {
+    /* Shinkei-style two-column layout */
+    /* .main-layout {
+        display: flex;
+    }
+    
+    .header {
+        width: 300px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        border-right: 1px solid #333;
+    }
+    
+    .main {
+        margin-left: 300px;
+        width: calc(100% - 300px);
+        padding: 4rem;
+    }
+    
+    .container {
+        max-width: 700px;
+    }
+} */ 
